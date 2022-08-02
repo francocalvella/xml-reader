@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML READER</title>
+</head>
+<body>
+    <h1>INSERT YOUR XML</h1>
+    <form action="" method="POST" enctype='multipart/form-data'>
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <button type="submit">Send</button>
+    </form>
+    {% if albums_array %}
+        {% for album in albums_array %}
+            <div>
+                <h4>{{album.title}}</h4>
+                <p>{{album.release_year}}</p>
+                <p>{{album.author}}</p>
+                <p>{{album.best_song}}</p>
+            </div>
+        {% endfor %}  
+    {% else %}
+            <div>No albums yet</div>
+    {% endif %}
+
+</body>
+</html>

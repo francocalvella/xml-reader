@@ -1,0 +1,20 @@
+<group>
+    <album id="2">
+        <title>Alta Suciedad</title>
+        <release>1997-05-03</release>
+        <author>Andres Calamaro</author>
+        <best_song>Todo Lo Demas Tambien</best_song>
+    </album>
+    <album id="3">
+        <title>Espiritu Del Vino</title>
+        <release>1993-11-15</release>
+        <author>Heroes Del Silencio</author>
+        <best_song>La Sirena varada</best_song>
+    </album>
+    <album id="4">
+        <title>The Queen Is Dead</title>
+        <release>1986-06-16</release>
+        <author>The Smiths</author>
+        <best_song>There Is A Light That Never Goes Out</best_song>
+    </album>
+</group>
